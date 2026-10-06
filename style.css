@@ -101,12 +101,14 @@ span.space {
   position: absolute;
 }
 
-#jacob-ford:hover::after {
-  right: 0;
+#jacob:hover::after {
+  left: 0;
   content: "of Geistlist";
+  color: grey;
 }
 
-#dj-nalroc:hover::after {
+#adam:hover::after {
   left: 0;
-  content: "of Garbage Day"
+  content: "of Garbage Day";
+  color: grey;
 }
