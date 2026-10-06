@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   text-align: left;
   text-transform: none;
-  padding: 0.5rem; /* TODO: should really be body-wide, excepting h1 overflow */
+  padding-inline: 1rem; /* TODO: should really be body-wide, excepting h1 overflow */
 }
 
 header {
