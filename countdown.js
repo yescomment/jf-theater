@@ -1,4 +1,4 @@
-const nextEventDate = new Date('Mar 21 2020 21:00:00 EDT')
+const nextEventDate = new Date('Oct 9 2026 18:00:00 EDT')
 const element = document.getElementById('door')
 
 function updateCountdown() {
@@ -11,11 +11,13 @@ function updateCountdown() {
   } else if (msLeft < 0 && Math.floor(msLeft / 10000) % 2) {
     element.innerHTML = `YOU’RE ${-msLeft}ms LATE` // flash between this…
   } else if (msLeft < 0) {
-    element.innerHTML = 'meet.google.com/kdq-mnte-qju' // and URL every 10 seconds once started
+    element.innerHTML = 'link TK' // and URL every 10 seconds once started
   } else if (msLeft < 60000 && Math.floor(msLeft / 100) % 2) {
-    element.innerHTML = 'meet.google.com/kdq-mnte-qju' // strobe URL starting 1 min before
-  } else if (msLeft < 600000 && Math.floor(msLeft / 1000) % 2) {
-    element.innerHTML = 'meet.google.com/kdq-mnte-qju' // flash URL every 1 sec starting 10 mins before
+    element.innerHTML = 'link TK' // strobe URL starting 1 min before
+  } else if (msLeft < 900000 && Math.floor(msLeft / 1000) % 2) {
+    element.innerHTML = 'link TK' // flash URL every 1 sec starting 15 mins before
+  } else if (msLeft < 1020000 && Math.floor(msLeft / 1000) % 2) {
+    element.innerHTML = 'Doors open momentarily' // flash coming soon starting 18 mins before
   } else {
     element.innerHTML = `${msLeft}ms` // otherwise show ms until showtime
   }

@@ -8,6 +8,13 @@ body {
   overflow-x: hidden;
 }
 
+.leftalign {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  text-transform: none;
+}
+
 header {
   position: relative;
   overflow: hidden;
@@ -93,12 +100,12 @@ span.space {
   position: absolute;
 }
 
-#live-scored:hover::before {
+#jacob-ford:hover::after {
   right: 0;
-  content: "CLOSING SET";
+  content: "of Geistlist";
 }
 
 #dj-nalroc:hover::after {
   left: 0;
-  content: "Cortland Mahoney"
+  content: "of Garbage Day"
 }
