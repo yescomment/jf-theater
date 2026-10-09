@@ -1,6 +1,5 @@
 body {
   font-family: system-ui, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
-  text-transform: uppercase;
   margin: 0;
   text-align: center;
   font-size: 24px;
@@ -8,11 +7,23 @@ body {
   overflow-x: hidden;
 }
 
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 1em;
+  background: black;
+  color: white;
+}
+
+a.button {
+  text-decoration: none;
+}
+
 .leftalign {
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;
-  text-transform: none;
   padding-inline: 1rem; /* TODO: should really be body-wide, excepting h1 overflow */
 }
 
@@ -24,6 +35,12 @@ header {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+header,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -59,7 +76,12 @@ h2, h3, h4, h5, h6 {
 
 a {
   color: inherit;
-  text-decoration: none;
+  transition: text-decoration-thickness 0.2s ease;
+  text-decoration-thickness: 0.1em;
+}
+
+a:hover {
+  text-decoration-thickness: 6px;
 }
 
 span.space {
@@ -114,5 +136,11 @@ span.space {
 #adam:hover::after {
   left: 0;
   content: "of Garbage Day";
+  color: grey;
+}
+
+#gregories:hover::after {
+  left: 0;
+  content: "of Schmoyoho";
   color: grey;
 }
