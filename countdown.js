@@ -1,4 +1,4 @@
-const nextEventDate = new Date('Oct 8 2026 21:06:00 EDT')
+const nextEventDate = new Date('Oct 9 2026 19:00:00 EDT')
 const element = document.getElementById('door')
 
 function updateCountdown() {
